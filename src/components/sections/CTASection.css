@@ -1,0 +1,68 @@
+.cta-banner {
+  background: linear-gradient(90deg, var(--surface-light) 0%, var(--surface-color) 100%);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.cta-banner-content h3 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.cta-banner-content p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.cta-banner-content {
+  width: 100%;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.cta-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: var(--surface-light);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+}
+
+.cta-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+textarea.cta-input {
+  grid-column: span 2;
+  min-height: 80px;
+}
+
+@media (max-width: 768px) {
+  .cta-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  textarea.cta-input {
+    grid-column: span 1;
+  }
+}

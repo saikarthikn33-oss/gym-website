@@ -1,0 +1,19 @@
+.section {
+  padding: 6rem 1rem;
+}
+
+.section-dark {
+  background-color: var(--bg-color);
+}
+
+.section-light {
+  background-color: var(--surface-color);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+}
