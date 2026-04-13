@@ -8,6 +8,7 @@ import Trainers from './components/sections/Trainers';
 import Gallery from './components/sections/Gallery';
 import Testimonials from './components/sections/Testimonials';
 import Contact from './components/sections/Contact';
+import CTASection from './components/sections/CTASection';
 
 function App() {
   return (
